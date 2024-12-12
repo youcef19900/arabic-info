@@ -1,0 +1,133 @@
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Conteneur de la barre de notification */
+#notification-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Conteneur des cartes */
+#rss-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin-top: 50px;
+}
+
+/* Carte d'article */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.card-content p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.card .site-name {
+    font-size: 12px;
+    color: #999;
+}
+
+/* Fenêtre modale */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Image dans la modale */
+#modal-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#modal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Texte de l'article dans la modale */
+#modal-description {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}

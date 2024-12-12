@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application RSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barre de notification -->
+    <div id="notification-bar" style="display:none;">
+        <p id="notification-message"></p>
+    </div>
+
+    <div id="rss-container"></div>
+
+    <!-- Fenêtre modale pour afficher l'article complet -->
+    <div id="article-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+
+            <!-- Conteneur de l'image dans la modale -->
+            <div id="modal-image-container">
+                <img id="modal-image" src="" alt="Image de l'article">
+            </div>
+
+            <!-- Contenu de l'article -->
+            <h2 id="modal-title"></h2>
+            <div id="modal-description"></div>
+            <a id="modal-link" href="#" target="_blank">Lire l'article complet</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
